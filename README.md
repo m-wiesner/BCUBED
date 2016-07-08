@@ -1,4 +1,4 @@
- B3
+ # B3
  ===============================================================================
  This function determines the extrinsic clustering quality b-cubed measure 
  using a set of known labels for a data set, and cluster assignmnets of 
