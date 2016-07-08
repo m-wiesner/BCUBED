@@ -7,6 +7,8 @@
  assignments is stored. The multi-class variant should not yet be used and 
  does not scale well.
 
+ Python and matlab implementations are provided.
+
 ##Inputs
 --------------------------------------------------------------------------------
        L: An NxM matrix containing class labels for each data point. Each 
