@@ -38,7 +38,6 @@
 # ----------------------------------------------
 
 import numpy as np
-import pdb
 
 # Calculate precision and recall for each class     
 def compute_class_precision_recall(L,K):
@@ -140,7 +139,6 @@ def calc_b3(L , K , class_norm=False, beta=1.0):
   precision_recall , class_sizes = compute_class_precision_recall(L,K)
   
   # Two methods of obtaining overall precision and recall
-  pdb.set_trace()
   if(class_norm == True):
     precision = precision_recall[0].sum() / class_sizes[1].size 
     recall    = precision_recall[1].sum() / class_sizes[0].size
