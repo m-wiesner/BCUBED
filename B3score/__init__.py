@@ -1,1 +1,1 @@
-from b3 import B3
+from B3score import b3
