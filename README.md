@@ -4,10 +4,20 @@
  using a set of known labels for a data set, and cluster assignmnets of 
  each data point stored as either vector or cell arrays where each
  cell/row represets a data point in which an array containing class or cluster
- assignments is stored. The multi-class variant should not yet be used and 
- does not scale well.
+ assignments is stored. The multi-class variant (.m) should not yet be used and 
+ does not scale well. The single-class variant is on the order of 1000 times
+ faster than the other bcubed scoring available on pip, but the multiclass
+ variant has not been implemented in python as it suffers from the same
+ slow performace.
 
  Python and matlab implementations are provided.
+
+##Installation
+  The easiest way to install is to run the following command.
+      
+      pip install B3score
+  
+  Otherwise just clone or download the repo. 
 
 ##Inputs
 --------------------------------------------------------------------------------
