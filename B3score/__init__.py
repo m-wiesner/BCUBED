@@ -1,1 +1,1 @@
-from B3score import b3
+from B3score.b3 import calc_b3
