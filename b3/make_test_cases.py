@@ -9,12 +9,11 @@ num_clusters = np.random.randint(1,10,(num_cases,))
 num_labels = np.random.randint(1,10,(num_cases,))
 num_elements = np.random.randint(1000,2000,(num_cases,))
 
-my_b3 = b3.B3()
 for i in xrange(num_cases):
   L = np.random.randint(1,num_clusters[i]+1,(num_elements[i],))
   K = np.random.randint(1,num_labels[i]+1,(num_elements[i],))
   
-  [my_f,my_p,my_r] = my_b3.calc_b3(L,K)
+  [my_f,my_p,my_r] = b3.calc_b3(L,K)
   
   Ldict = { i:set([L[i]])  for i in xrange(num_elements[i])}
   Cdict = { i:set([K[i]])  for i in xrange(num_elements[i])}
