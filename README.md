@@ -1,4 +1,4 @@
-#B3
+# B3
 -------------------------------------------------------------------------------- 
  This function determines the extrinsic clustering quality b-cubed measure 
  using a set of known labels for a data set, and cluster assignmnets of 
@@ -12,14 +12,14 @@
 
  Python and matlab implementations are provided.
 
-##Installation
+## Installation
   The easiest way to install is to run the following command.
       
       pip install B3score
   
   Otherwise just clone or download the repo. 
 
-##Inputs
+## Inputs
 --------------------------------------------------------------------------------
        L: An NxM matrix containing class labels for each data point. Each 
           row represents the ith data point and each column contains a 0, or 1
@@ -30,7 +30,7 @@
        K: Defined identically to L except for this variable stores cluster
           assignments for each data point
 
-##Outputs
+## Outputs
 --------------------------------------------------------------------------------
       Fmeasure: This F-measure using the b-cubed metric
       precision: The b-cubed precision
