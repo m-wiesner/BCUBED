@@ -40,21 +40,21 @@
 --------------------------------------------------------------------------------
 ## Performace demonstration
 --------------------------------------------------------------------------------
-  ./compare\_performance.sh
-  Timing shared setup time for 5 random cases using the bcubed package
-  real    0m1.351s
-  user    0m0.248s
-  sys    0m0.071s
+        ./compare\_performance.sh
+        Timing shared setup time for 5 random cases using the bcubed package
+        real    0m1.351s
+        user    0m0.248s
+        sys    0m0.071s
   
-  Timing full execution time (b3 + shared) for the B3score implementation
-  real    0m0.283s
-  user    0m0.240s
-  sys    0m0.045s
+        Timing full execution time (b3 + shared) for the B3score implementation
+        real    0m0.283s
+        user    0m0.240s
+        sys    0m0.045s
   
-  Timing full execution time (bcubed + shared) for the bcubed implementation
-  real    0m38.233s
-  user    0m36.174s
-  sys    0,0.273s
+        Timing full execution time (bcubed + shared) for the bcubed implementation
+        real    0m38.233s
+        user    0m36.174s
+        sys    0m0.273s
 --------------------------------------------------------------------------------
       Author: Matthew Wiesner
       Email : wiesner@jhu.edu 
