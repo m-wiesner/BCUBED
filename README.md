@@ -21,11 +21,12 @@
 
 ## Inputs
 --------------------------------------------------------------------------------
-       L: An NxM matrix containing class labels for each data point. Each 
-          row represents the ith data point and each column contains a 0, or 1
-          in the jth column indicating membership of label j.
-          Alternatively, if hard class labels are available, L can be input 
-          as an Nx1 vector where each entry is its class label
+       L: An NxM matrix containing class labels for each data point (for the
+          multiclass case, once implemented). Each row represents the ith data
+          point and each column contains a 0, or 1 in the jth column indicating
+          membership of label j. Alternatively, if hard class labels are
+          available, L can be input as an Nx1 vector where each entry is its
+          class label.
 
        K: Defined identically to L except for this variable stores cluster
           assignments for each data point
@@ -36,6 +37,27 @@
       precision: The b-cubed precision
       recall: The b-cubed recall
 
+--------------------------------------------------------------------------------
+## Performace demonstration
+--------------------------------------------------------------------------------
+./compare_performance.sh
+Timing shared setup time for 5 random cases using the bcubed package
+
+real    0m1.351s
+user    0m0.248s
+sys    0m0.071s
+Timing full execution time (b3 + shared) for the B3score implementation
+//anaconda/lib/python2.7/site-packages/numpy/lib/shape_base.py:873: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  return c.reshape(shape_out)
+
+  real    0m0.283s
+  user    0m0.240s
+  sys    0m0.045s
+  Timing full execution time (bcubed + shared) for the bcubed implementation
+
+  real    0m38.233s
+  user    0m36.174s
+  sys    0m0.273s
 --------------------------------------------------------------------------------
       Author: Matthew Wiesner
       Email : wiesner@jhu.edu 
