@@ -13,11 +13,7 @@
  Python and (matlab coming) implementations are provided.
 
 ## Installation
-  The easiest way to install is to run the following command.
-      
-      pip install B3score
-  
-  Otherwise just clone or download the repo. 
+  Clone or download the repo. (I have to update the pip package)
 
 ## Inputs
 --------------------------------------------------------------------------------
