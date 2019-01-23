@@ -67,9 +67,9 @@ def compute_class_precision_recall(L,K):
   # 1. Number of total elements to cluster
   # 2. Number of distinct labels
   # 3. Number of distinct clusters
-  num_elements = float(len(L))
-  num_labels   = float(L.max() + 1)
-  num_clusters = float(K.max() + 1)
+  num_elements = len(L)
+  num_labels   = L.max() + 1
+  num_clusters = K.max() + 1
 
   # Create binary num_elements x num_labels / num_clusters assignment matrices. 
   X_L = np.tile(L, (num_labels,1) ).T
